@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>HTML Practice Page</title>
+        <meta>
+        <style>
+            body{
+                margin: 20px;
+                background-color: #ffd1ff;
+                max-width: 5000px;
+
+            }
+            
+            ul{
+                list-style:none;
+                margin:0;
+                background-color: #fcb0f5;
+                padding : 20px;
+            }
+            li{ 
+                margin:15px;
+                background-color: #ffffff;
+                padding:10px;
+                border-radius: 8px;
+            }
+            ol{
+                list-style-type: upper-roman;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+
+            h1{
+                text-align: center;
+                font-size: 50px;
+                text-shadow: 4px 4px 10px rgba(255, 13, 13, 0.889);
+                transition: color 0.3s ease;
+            }
+            #main-heading:hover{
+                    color: rgb(89, 117, 242);
+                }
+            h3{
+                color : limegreen;
+                letter-spacing: 5px;
+                opacity: 0.6;
+            }
+            p.description{
+                border-radius: 50px;
+                padding: 30px;
+                background-color: lightgray;
+                line-height: 30px;
+                
+            }
+            hr{
+                border-color: rgba(59, 218, 15, 0.813);
+                width: 80%;
+                height: 5px;
+                border-radius: 30px;
+
+            }
+            pre{
+                color: rgb(31, 255, 61);
+                background-color: rgb(0, 0, 0);
+                font-family:monospace;
+            }
+            a{
+                color: rgb(255, 0, 4);
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+            a:hover{
+                text-decoration: underline;
+                color: rgb(0, 0, 255);
+            }
+            div{
+                border-radius: 15px;
+                box-shadow: #f818e2 10px 10px 18px;
+            }
+            span{
+                color:rgb(255, 3, 3);
+                font-size: 20px;
+                font-weight: bold;
+            }
+            button{
+                background-color: #8a4bf6;
+                padding: 30px;
+                border-radius: 20px;
+                transform: scale(1.1);
+            }
+            button:hover{
+                background-color: #4bf67a;
+                cursor: pointer;
+                box-shadow: 10px 10px 20px rgba(75, 246, 122, 0.705);
+            }
+            
+                footer{
+                font-size:10px;
+                text-align: center;
+                color : rgb(95, 79, 79);
+            }
+            p.description2{ 
+                border: 10px dotted rgb(0, 0, 0);
+                background-color: rgb(207, 69, 23);
+                transform: rotate(2deg);
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 id="main-heading">Welcome to My HTML Practice Page</h1>
+        <h3>This is a sub-heading</h3>
+        <p class="description"> HTML is know as <b>Hyper Text Markup Language.</b><br>
+        <hr>
+        <p class="description2"><strong>It uses different types of elements to create web pages.</strong><br>
+        </p>
+        <hr>
+        <p><i>It is a markup language that tells the browser how to display content.</i><br>
+        </p>
+        <hr>
+        <p><em>It is the standard language for creating web pages and web applications.</em><br>
+        </p>
+        <hr>
+        <pre>This shows the use of the pre tag.
+                    This is on second line.
+                                                This is on third line.</pre>
+        <ul id="item-list"> This is an unordered list:
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <ol id="ordered-list"> This is an ordered list:
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ol>
+        <a href="https://www.youtube.com" class="Website-link">This is a link to the <b>YOUTUBE</b></a>
+
+        <div>
+        Here is a <span>stylized</span> sentence within a div.
+        </div>
+        <button id="my-button">Click Me!</button>
+        <footer class ="page-footer">
+            This is the footer content of the page.
+        </footer>
+        
+    
+    </p>
+
+    </body>
+</html>
