@@ -1,0 +1,181 @@
+<html>
+    <head>
+        <title> Alignment Practice</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #F4F8FB;
+            padding: 20px;
+        }
+        h2 {
+            margin : 40px;
+            color: #3E2723;
+        }
+        .container {
+        display: flex;
+        background: #E3F2FD;
+        border: 3px solid #64B5F6;
+        padding: 10px;
+        border-radius: 30px;
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+        }
+        .box {
+        display: flex;
+        width: 100px;
+        height: 100px;
+        background: #90CAF9;
+        color: #0D47A1;
+        align-items: center;
+        margin: 10px;
+        border-radius: 30px;
+        justify-content: center;
+        }
+        .task1 {
+            align-items: center;
+
+        }
+        .task2 {
+            align-items: flex-end;
+            height:300px;
+        }
+        .task3 {
+            align-items: stretch;
+            height: 300px;
+        }
+        .task4 {
+            align-content: space-between;
+            flex-wrap: wrap;
+            height: 400px;
+            max-width:600px;
+        }
+        .task5{
+            flex-wrap: wrap;
+            align-content: center;
+            height: 400px;
+            width: 800px;
+        }
+        .task6A{
+            flex-wrap: wrap;
+            align-items: center;
+            height: 400px;
+            max-width: 600px;
+        }
+        .task6B{
+            flex-wrap: wrap;
+            align-content: center;
+            height: 400px;
+            max-width: 600px;
+        }
+        .task7{
+            align-items: center;
+            height: 400px;
+            max-width: 600px;
+        }
+        .task8{
+            align-items: center;
+            height: 400px;
+            max-width: 600px;
+        }
+        .task9{
+            height: 400px;
+            max-width: 600px;
+        }
+        .task10{
+            align-items: stretch;
+            height: 300px;
+        }
+        .task10 .box{
+            height: auto;
+        }
+        .sidebar{
+            width:200px;
+        }
+        .main{
+            flex:1;
+        }
+        .notification{
+            width:300px;
+        }
+    </style>
+    </head>
+<body>
+    <h2>Task 1: Center Items Vertically (align-items)</h2>
+    <div class="container task1">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+    <h2> Task 2: Align Items to Bottom</h2>
+    <div class="container task2">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+    <h2>Task 3: Stretch Items automatically</h2>
+    <div class="container task3">
+        <div class="box" style="height: auto;">1</div>
+        <div class="box" style="height: auto;">2</div>
+        <div class="box" style="height: auto;">3</div>
+    </div>
+    <h2>Task 4: Multi-row layout using align-content</h2>
+    <div class="container task4">
+        <div class="box">1</div><div class="box">2</div><div class="box">3</div><div class="box">4</div>
+        <div class="box">5</div><div class="box">6</div><div class="box">7</div><div class="box">8</div>
+        <div class="box">9</div><div class="box">10</div><div class="box">11</div> <div class="box">12</div>
+    </div>
+    <h2>Task 5: Center Multiple Rows</h2>
+    <div class="container task5">
+         <div class="box">1</div><div class="box">2</div><div class="box">3</div><div class="box">4</div>
+        <div class="box">5</div><div class="box">6</div><div class="box">7</div><div class="box">8</div>
+        <div class="box">9</div><div class="box">10</div><div class="box">11</div> <div class="box">12</div>
+    </div>
+    <h2>Task 6A: align-items: center</h2>
+
+        <div class="container task6A">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+        <div class="box">E</div>
+        <div class="box">F</div>
+    </div>
+    <h2>Task 6B: align-content: center</h2>
+        <div class="container task6B">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+        <div class="box">E</div>
+        <div class="box">F</div>
+    </div>
+    <h2>Task 7: Override Alignment using align-self</h2>
+    <div class="container task7">
+        <div class="box">1</div>
+        <div class="box" style="align-self: flex-start;">2</div>
+        <div class="box">3</div>
+    </div>
+    <h2>Task 8: Individual item at bottom</h2>
+    <div class="container task8">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box" style="align-self: flex-end;">4</div>
+    </div>
+    <h2>Task 9: Mixed align self values</h2>
+    <div class="container task9">
+        <div class="box" style="align-self:flex-start ;">1</div>
+        <div class="box" style="align-self: center;">2</div>
+        <div class="box" style="align-self: flex-end;">3</div>
+        <div class="box" style="align-self:stretch; height: auto;">4</div>
+        <div class="box">5</div>
+    </div>
+    <h2>Task 10: Real-world output:Dashboard</h2>
+    <div class="container task10">
+    <div class="box sidebar">Sidebar</div>
+    <div class="box main">Main content</div>
+    <div class="box notification">Notification</div>
+    </div>
+</body>
+</html>
